@@ -1,5 +1,5 @@
 
-int (int c)
-{
-	return (0);
-}
+// int (int c)
+// {
+// 	return (0);
+// }

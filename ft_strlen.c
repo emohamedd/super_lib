@@ -6,19 +6,17 @@
 /*   By: emohamed <emohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/05 00:14:20 by emohamed          #+#    #+#             */
-/*   Updated: 2023/05/05 00:37:58 by emohamed         ###   ########.fr       */
+/*   Updated: 2023/05/07 10:50:36 by emohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-int ft_strlen(const char *s)
+size_t ft_strlen(const char *s)
 {
-	int i;
+	size_t i;
 
 	i = 0;
-	if (!s)
-		return (NULL);
 	while(s[i])
 		i++;
-	return (i);
+	return (i);	
 }
