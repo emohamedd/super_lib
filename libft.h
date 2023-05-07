@@ -6,7 +6,7 @@
 /*   By: emohamed <emohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/04 22:31:28 by emohamed          #+#    #+#             */
-/*   Updated: 2023/05/07 13:35:40 by emohamed         ###   ########.fr       */
+/*   Updated: 2023/05/07 18:38:15 by emohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,9 @@ void ft_bzero(void *s, size_t n);
 size_t  ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t ft_strlcat(char *dst, char *src, size_t dstsize);
 void *ft_memcpy(void *dst, const void *src, size_t n);
+int ft_toupper(int c);
+int ft_tolower(int c);
+char *ft_strchr(const char *s, int c);
+char *ft_strrchr(const char *s, int c);
 
 #endif

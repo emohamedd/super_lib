@@ -6,7 +6,7 @@
 /*   By: emohamed <emohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/07 13:28:33 by emohamed          #+#    #+#             */
-/*   Updated: 2023/05/07 14:55:20 by emohamed         ###   ########.fr       */
+/*   Updated: 2023/05/07 18:31:31 by emohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,34 +16,21 @@
 size_t ft_strlcat(char *dst, char *src, size_t dstsize)
 {
 	size_t i;
-	size_t j;
 	size_t dlen;
 	size_t slen;
 	size_t size;
 	i = 0;
-	j = 0;
-	while (dst[i])
-		i++;
-	dlen = i;
-	while (src[j])
-		j++;
-	slen = j;
+
+	dlen = ft_strlen(dst);
+	slen = ft_strlen(src);
 	if (dstsize == 0 || dlen > dstsize)
 		return (dstsize + slen);
 	size = dstsize - dlen - 1;
-	j = 0;
-	while (j < size)
+	while (i < size)
 	{
-		dst[i] = src[j];
+		dst[dlen + i] = src[i];
 		i++;
-		j++;
 	}
-	dst[i] = '\0';
+	dst[dlen + i] = '\0';
 	return(dlen + slen);
-}
-int main()
-{
-    char dest[10] = "a";
-   	ft_strlcat(dest, "lorem ipsum dolor sit amet", 6);
-    printf("%s\n", dest);
 }
