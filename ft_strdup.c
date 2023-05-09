@@ -1,38 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emohamed <emohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/09 12:38:12 by emohamed          #+#    #+#             */
-/*   Updated: 2023/05/09 17:31:26 by emohamed         ###   ########.fr       */
+/*   Created: 2023/05/09 17:33:44 by emohamed          #+#    #+#             */
+/*   Updated: 2023/05/09 17:49:37 by emohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_calloc(size_t count, size_t size)
+char *ft_strdup(const char *s1)
 {
-	size_t sizee;
-	void *p;
-	size_t i;;
+	int i = 0;
+	char *p;
 	
-	p = NULL;
-	i = 0;
-	sizee = count * size;
-	p = malloc(sizee);
+	p = malloc(sizeof(char) * ft_strlen(s1) + 1);
 	if (!p)
-		return (NULL);
-	ft_bzero(p, sizee);
+		return(NULL);
+	while(s1[i])
+	{
+		p[i] = s1[i];
+		i++;
+	}
+	p[i] = '\0';
 	return (p);
 }
-// int main()
-// {
-// 	char *str;
-// 	   	str = (char *)ft_calloc(30, 1);
-//     if (!str)
-//         write(1, "NULL", 4);
-//     else
-//         write(1, str, 30);
-// }
