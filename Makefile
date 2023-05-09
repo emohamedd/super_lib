@@ -1,6 +1,6 @@
 CC = cc
 CFLAGS = -Wall -Werror -Wextra
-SRCS = ft_atoi.c
+SRCS = $(wildcard *.c)
 OBJS = $(SRCS:.c=.o)
 
 NAME = libft.a
