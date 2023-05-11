@@ -6,7 +6,7 @@
 /*   By: emohamed <emohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/04 22:31:28 by emohamed          #+#    #+#             */
-/*   Updated: 2023/05/10 15:37:17 by emohamed         ###   ########.fr       */
+/*   Updated: 2023/05/11 14:19:20 by emohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,4 +43,5 @@ char *ft_strdup(const char *s1);
 char *ft_substr(char const *s, unsigned int start, size_t len);
 char *ft_strjoin(char const *s1, char const *s2);
 char *ft_strtrim(char const *s1, char const *set);
+char **ft_split(char const *s, char c);
 #endif
