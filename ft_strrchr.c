@@ -6,7 +6,7 @@
 /*   By: emohamed <emohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/07 18:12:53 by emohamed          #+#    #+#             */
-/*   Updated: 2023/05/07 19:11:50 by emohamed         ###   ########.fr       */
+/*   Updated: 2023/05/12 20:37:12 by emohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,4 @@ char *ft_strrchr(const char *s, int c)
 		i--;
 	}
 	return (NULL);
-}
-
-int main()
-{
-	char s[] = "tripouille";
-	printf("%s\n", ft_strrchr(s, 'x'));
 }

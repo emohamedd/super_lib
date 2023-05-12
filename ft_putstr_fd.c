@@ -6,7 +6,7 @@
 /*   By: emohamed <emohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/12 17:06:33 by emohamed          #+#    #+#             */
-/*   Updated: 2023/05/12 17:07:52 by emohamed         ###   ########.fr       */
+/*   Updated: 2023/05/12 19:46:25 by emohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	ft_putstr_fd(char *s, int fd)
 
 	i = 0;
 	if (!s)
-		return (NULL);
+		return;
 	while (s[i])
 	{
 		write(fd, &s[i], sizeof(char));
