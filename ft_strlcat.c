@@ -13,7 +13,7 @@
 #include "libft.h"
 #include <string.h>
 
-size_t ft_strlcat(char *dst, char *src, size_t dstsize)
+size_t	ft_strlcat(char *dst, char *src, size_t dstsize)
 {
 	size_t i;
 	size_t dlen;
@@ -32,5 +32,5 @@ size_t ft_strlcat(char *dst, char *src, size_t dstsize)
 		i++;
 	}
 	dst[dlen + i] = '\0';
-	return(dlen + slen);
+	return (dlen + slen);
 }

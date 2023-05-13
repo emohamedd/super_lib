@@ -11,10 +11,11 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-int count_s_lenght(const char *s, char c)
+
+int	count_s_lenght(const char *s, char c)
 {
-	int i;
-	int j;
+	int	i;
+	int	j;
 
 	i = 0;
 	j = 0;
@@ -30,19 +31,19 @@ int count_s_lenght(const char *s, char c)
 	return (j);
 }
 
-char *allocat_s(const char *s, char c)
+char	*allocat_s(const char *s, char c)
 {
-	int i;
-	int len;
-	char *p;
+	int		i;
+	int		len;
+	char	*p;
 
 	i = 0;
 	len = 0;
 	while (s[len] && s[len] != c)
-			len++;
+		len++;
 	p = malloc(sizeof(char) * len + 1);
 	if (!p)
-		return NULL;
+		return (NULL);
 	while (i < len)
 	{
 		p[i] = s[i];
@@ -52,11 +53,11 @@ char *allocat_s(const char *s, char c)
 	return (p);
 }
 
-char **ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
-	char **p;
-	int i;
-	int j;
+	char	**p;
+	int		i;
+	int		j;
 
 	i = 0;
 	j = 0;

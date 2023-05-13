@@ -12,12 +12,13 @@
 
 #include "libft.h"
 
-void *ft_calloc(size_t count, size_t size)
+void	*ft_calloc(size_t count, size_t size)
 {
-	size_t sizee;
-	void *p;
-	size_t i;;
-	
+	size_t	sizee;
+	void	*p;
+	size_t	i;
+
+	;
 	p = NULL;
 	i = 0;
 	sizee = count * size;
@@ -30,7 +31,7 @@ void *ft_calloc(size_t count, size_t size)
 // int main()
 // {
 // 	char *str;
-// 	   	str = (char *)ft_calloc(30, 1);
+// 			str = (char *)ft_calloc(30, 1);
 //     if (!str)
 //         write(1, "NULL", 4);
 //     else
