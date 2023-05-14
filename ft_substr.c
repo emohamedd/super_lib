@@ -6,11 +6,12 @@
 /*   By: emohamed <emohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/10 10:39:39 by emohamed          #+#    #+#             */
-/*   Updated: 2023/05/10 11:58:29 by emohamed         ###   ########.fr       */
+/*   Updated: 2023/05/14 09:54:57 by emohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+// #include <stdlib.h>
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
@@ -28,8 +29,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	stock[len] = '\0';
 	return (stock);
 }
-// int main()
-// {
-// 	char *name = ft_substr("hola", 4294967295, 0);
-// 	printf("%s\n", name);
-// }

@@ -6,7 +6,7 @@
 /*   By: emohamed <emohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/10 11:59:19 by emohamed          #+#    #+#             */
-/*   Updated: 2023/05/10 12:04:45 by emohamed         ###   ########.fr       */
+/*   Updated: 2023/05/14 09:51:39 by emohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	int i;
-	int j;
-	int size;
-	char *p;
+	int		i;
+	int		j;
+	int		size;
+	char	*p;
 
 	i = 0;
 	j = 0;

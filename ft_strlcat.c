@@ -6,7 +6,7 @@
 /*   By: emohamed <emohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/07 13:28:33 by emohamed          #+#    #+#             */
-/*   Updated: 2023/05/07 18:31:31 by emohamed         ###   ########.fr       */
+/*   Updated: 2023/05/14 09:51:56 by emohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,12 @@
 
 size_t	ft_strlcat(char *dst, char *src, size_t dstsize)
 {
-	size_t i;
-	size_t dlen;
-	size_t slen;
-	size_t size;
-	i = 0;
+	size_t	i;
+	size_t	dlen;
+	size_t	slen;
+	size_t	size;
 
+	i = 0;
 	dlen = ft_strlen(dst);
 	slen = ft_strlen(src);
 	if (dstsize == 0 || dlen > dstsize)

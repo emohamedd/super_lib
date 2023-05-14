@@ -1,38 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emohamed <emohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/09 12:38:12 by emohamed          #+#    #+#             */
-/*   Updated: 2023/05/14 09:46:28 by emohamed         ###   ########.fr       */
+/*   Created: 2023/05/14 11:37:05 by emohamed          #+#    #+#             */
+/*   Updated: 2023/05/14 15:39:13 by emohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_calloc(size_t count, size_t size)
-{
-	size_t	sizee;
-	void	*p;
-	size_t	i;
-
-	p = NULL;
-	i = 0;
-	sizee = count * size;
-	p = malloc(sizee);
-	if (!p)
-		return (NULL);
-	ft_bzero(p, sizee);
-	return (p);
-}
-// int main()
+// t_list *ft_lstlast(t_list *lst)
 // {
-// 	char *str;
-// 			str = (char *)ft_calloc(30, 1);
-//     if (!str)
-//         write(1, "NULL", 4);
-//     else
-//         write(1, str, 30);
+	
 // }
