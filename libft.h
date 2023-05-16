@@ -6,7 +6,7 @@
 /*   By: emohamed <emohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/04 22:31:28 by emohamed          #+#    #+#             */
-/*   Updated: 2023/05/15 19:55:01 by emohamed         ###   ########.fr       */
+/*   Updated: 2023/05/16 10:21:36 by emohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,5 +56,5 @@ void	ft_putendl_fd(char *s, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 t_list	*ft_lstnew(void *content);
-// char	*ft_itoa(int n);
+char	*ft_itoa(int n);
 #endif
